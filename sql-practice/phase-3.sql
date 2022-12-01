@@ -78,3 +78,20 @@ VALUES
   ('Joey', 'joey@friends.show'),
   ('Chandler', 'chandler@friends.show'),
   ('Ross', 'ross@friends.show');
+
+-- p9
+
+SELECT points FROM customers WHERE name= 'Ross';
+
+-- 5
+
+UPDATE customers SET points = 11 WHERE name= 'Ross';
+
+INSERT INTO coffee_orders (is_redeemed)
+VALUES
+  (0),
+  (0),
+  (0),
+  (0),
+  (0),
+  (0);
