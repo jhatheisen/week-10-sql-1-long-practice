@@ -95,3 +95,77 @@ VALUES
   (0),
   (0),
   (0);
+
+-- p10
+
+SELECT points FROM customers WHERE name= "Monica";
+
+-- 9
+
+UPDATE customers SET points = 12 WHERE name= "Monica";
+
+INSERT INTO coffee_orders (is_redeemed)
+VALUES
+    (0),
+    (0),
+    (0);
+
+-- p11
+SELECT points FROM customers WHERE name= "Pheobe";
+
+UPDATE customers SET points = 9 WHERE name= "Pheobe";
+
+INSERT INTO coffee_orders (is_redeemed)
+VALUES
+    (0);
+
+-- p12
+
+-- delete orders 19 and 20
+DELETE FROM coffee_orders WHERE id= 19;
+DELETE FROM coffee_orders WHERE id= 20;
+
+UPDATE customers SET points = 9 WHERE name= "Ross";
+
+-- p13
+SELECT points FROM customers WHERE name= "Joey";
+
+UPDATE customers SET points = 7 WHERE name= "Joey";
+
+INSERT INTO coffee_orders (is_redeemed)
+VALUES
+    (0),
+    (0);
+
+-- p14
+SELECT points FROM customers WHERE name= "Monica";
+
+UPDATE customers SET points = 2 WHERE name= "Monica";
+
+INSERT INTO coffee_orders (is_redeemed)
+VALUES
+    (1);
+
+-- p15
+DELETE FROM customers WHERE name= "Chandler";
+
+-- p16
+SELECT points FROM customers WHERE name= "Ross";
+
+UPDATE customers SET points = 10 WHERE name= "Ross";
+
+INSERT INTO coffee_orders (is_redeemed)
+VALUES
+    (0);
+
+-- p17
+SELECT points FROM customers WHERE name= "Joey";
+
+UPDATE customers SET points = 8 WHERE name= "Joey";
+
+INSERT INTO coffee_orders (is_redeemed)
+VALUES
+    (0);
+
+-- p18
+UPDATE customers SET email = "p_as_in_phoebe@friends.show" WHERE name= "Pheobe";
